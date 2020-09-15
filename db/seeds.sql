@@ -1,8 +1,8 @@
 INSERT INTO burgers (burger_name, devoured)
-VALUES("whopper", "3");
+VALUES("whopper", "1");
 
 INSERT INTO burgers (burger_name, devoured)
-VALUES("hamburger", "2");
+VALUES("hamburger", "1");
 
 INSERT INTO burgers (burger_name, devoured)
 VALUES("double whopper", "1");
