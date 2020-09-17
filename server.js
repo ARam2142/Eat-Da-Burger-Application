@@ -7,6 +7,8 @@ var exphbs = require("express-handlebars");
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+app.use(express.static("public"));
+
 // Set Handlebars.
 app.engine("handlebars", exphbs({ defaultLayout: "main", extname: "handlebars" }));
 app.set("view engine", "handlebars");
