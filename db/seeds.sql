@@ -1,12 +1,17 @@
 INSERT INTO burgers (burger_name, devoured)
-VALUES("whopper", "1");
+VALUES("whopper", true);
 
 INSERT INTO burgers (burger_name, devoured)
-VALUES("hamburger", "1");
+VALUES("hamburger", true);
 
 INSERT INTO burgers (burger_name, devoured)
-VALUES("double whopper", "1");
+VALUES("double whopper", true);
 
-INSERT INTO burgers (burger_name, devoured)
-VALUES("bacon cheese burger", "0");
+INSERT INTO burgers (burger_name)
+VALUES("bacon cheese burger");
 
+INSERT INTO burgers (burger_name)
+VALUES("American cheese burger");
+
+INSERT INTO burgers (burger_name)
+VALUES("Blue Jalipino Burger");
