@@ -34,10 +34,10 @@ function printQuestionMarks(num) {
 //object for the sql statement
 var orm = {
     //select from the query table
-    selectAll: function (table, tableInput, cb) {
+    selectAll: function (tableInput, cb) {
         new Promise((resolve, reject) => {
-            var queryString = "SELECT * FROM ??";
-            connection.query(queryString, [tableInput, table, cb], function(err, result) {
+            var queryString = "SELECT * FROM " + tableInput + ";";
+            connection.query(queryString, function(result) {
                 cb(result);
                 resolve("ok");
             })
@@ -47,8 +47,8 @@ var orm = {
     },
 
     //insert into sql query table
-    insertOne: function (columns, values, cb) {
-        var queryString = "INSERT INTO burgers SET ?";
+    insertOne: function (table, columns, values, cb) {
+        var queryString = "INSERT INTO SET " + table;
         queryString += " (";
         queryString += columns.toString();
         queryString += ") ";
@@ -63,23 +63,28 @@ var orm = {
 
     },
 
-    updateOne: function (objColVals, condition, cb) {
-        var queryString = "UPDATE burgers SET";
+    updateOne: function (table, objColVals, condition, cb) {
+        var queryString = "UPDATE " + table;
+        querySting += " SET";
         queryString += objToSql(objColVals);
         queryString += "WHERE";
         queryString += condition
+        
+        console.log(queryString);
         connection.query(queryString, function(err, result) {
             if (err) throw err;
             cb(result)
-        })
+        });
     },
-
-    deleteOne: function (values, condition, columns, cb) {
-        var queryString = "DELETE FROM burgers WHERE" + condition;
+    
+    deleteOne: function (condition, cb) {
+        var queryString = "DELETE FROM" + table;
+        queryString += "WHERE";
+        queryString += condition;
         connection.query(queryString, function(err, result) {
             if (err) throw err;
             cb(result);
-        })
+        });
     }
 
 }

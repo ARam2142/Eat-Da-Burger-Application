@@ -3,42 +3,44 @@ var burger = require("../models/burger.js");
 var express = require("express");
 var router = express.Router();
 
-try {
+//try {
     //get all the routers for the app
     router.get("/", function(req, res) {
-        burger.all = (data) => {
+        burger.selectAll(function(data) {
             let hbeObject = {
-                burger: data
+                burgers: data
             };
             console.log(hbeObject);
             res.render("index", hbeObject);
-        };
-    });
-
-} catch(err) {
-    if (err) throw err;
-    console.log(err);
-}
-
-try {
-    router.post("/api/burgers", function(req, res) {
-        burger.create(["burger_name", "devoured"], 
-        [req.body.burger_name, req.body.devoured],
-        function(result) {
-            res.json({id: result.insertid});
         });
     });
 
-} catch(err) {
+/*} catch(err) {
+    if (err) throw err;
+    console.log(err);
+}*/
+
+//try {
+    router.post("/api/burgers", function(req, res) {
+        burger.insertOne(["burger_name", "devoured"], 
+        [req.body.burger_name, req.body.devoured],
+        function(result) {
+            res.json({ id: result.insertId});
+        });
+    });
+
+/*} catch(err) {
     if (err) throw err
     console.log("there is an err")
-}
+}*/
 
-try {
-    router.put("/api/burgers:id", function(req, res) {
+//try {
+    router.put("/api/burgers/:id", function(req, res) {
         var condition = "id = " + req.params.id;
-    
-        burger.update({devoured: req.body.devoured
+        
+        console.log("condition", condition);
+        
+        burger.updateOne({devoured: req.body.devoured
         }, condition, function(result) {
             if(result.changedRows === 0) {
     
@@ -50,16 +52,18 @@ try {
         });
     });
 
-} catch(err) {
+/*} catch(err) {
     if (err) throw err;
     console.log(err)
-}
+}*/
 
-try {
-    router.delete("/api/burgers:id", function(req, res) {
+//try {
+    router.delete("/api/burgers/:id", function(req, res) {
         var condition = "id = " + req.params.id;
+
+        console.log("condition", condition);
     
-        burger.delete({devoured: req.body.devoured
+        burger.deleteOne({devoured: req.body.devoured
         }, condition, function(result) {
             if(result.changedRows === 0) {
                 return res.status(404).end();
@@ -69,12 +73,10 @@ try {
         });
     });
 
-} catch(err) {
+/*} catch(err) {
     if (err) throw err;
     console.log(err);
-}
-
-
+}*/
 
 //export routers to server.js
 module.exports = router;
