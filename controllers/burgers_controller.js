@@ -10,6 +10,8 @@ var router = express.Router();
             let hbeObject = {
                 burgers: data
             };
+            //HERE we need to either perform or have abstracted logic to perform and return rsults of any var or calcl
+            //for view
             console.log(hbeObject);
             res.render("index", hbeObject);
         });
