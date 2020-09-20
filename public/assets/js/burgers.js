@@ -1,46 +1,49 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
-/*$(function() {
-    $(".change-sleep").on("click", function(event) {
+$(function() {
+    //burger to be updated to devoured
+    $(".change-status").on("click", function(event) {
       var id = $(this).data("id");
-      var newBurger = $(this).data("newsleep");
+      var eatenBurger = $(this).data("eatenburger");
   
-      var newSleepState = {
-        sleepy: newSleep
+      var devouredStatus = {
+        devoured: eatenBurger
       };
   
       // Send the PUT request.
       $.ajax("/api/burgers/" + id, {
         type: "PUT",
-        data: newSleepState
+        data: devouredStatus 
       }).then(
         function() {
-          console.log("changed sleep to", newSleep);
+          console.log("changed status of burger to", eatenBurger);
           // Reload the page to get the updated list
           location.reload();
         }
       );
     });
-  
-    $(".create-form").on("submit", function(event) {
+    
+    //enter and submit new burger
+    $(".form-create").on("submit", function(event) {
       // Make sure to preventDefault on a submit event.
       event.preventDefault();
   
-      var newCat = {
-        name: $("#ca").val().trim(),
-        sleepy: $("[name=sleepy]:checked").val().trim()
+      var newBurger = {
+        burger_name: $("#request").val().trim(),
+        devoured: 0
       };
   
       // Send the POST request.
       $.ajax("/api/burgers", {
         type: "POST",
-        data: newCat
+        data: newBurger
       }).then(
         function() {
-          console.log("created new cat");
+          console.log("inserted new burger");
           // Reload the page to get the updated list
           location.reload();
         }
       );
     });
   });
-  */
+  
+
