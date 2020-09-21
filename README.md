@@ -1,3 +1,6 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
 # Background
 
 Welcome to my burger application. Use this application to add a burger to the main menu. When you feel like your ready for dinner, you can then devour it with the click of a button. This is to be used for restaurants so there is a menu containing a list of all burgers that you add to the "burgers to be eaten" section. There is still more work that I would like to do on it later on. The obvious is making the application page more attractive.
