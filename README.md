@@ -40,6 +40,7 @@ This repository is licensed under the MIT license
 The folowing resources were used to build this app:
 
 David Hammond(tutor)
+
 Bremah(classmate)
 
 # Contact
