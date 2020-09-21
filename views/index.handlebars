@@ -23,8 +23,7 @@
                     {{#each burgers}}
                     {{#if devoured}}
                     {{> burgers/burger-block devoured=true}}
-                    <!--<li data-id="{{this.id}}"><span>{{burger_name}}</span></li>
-                    <button class="trash">trash</button>-->
+                    <button class="trash-can" data-id="{{id}}">trash</button>
                     {{/if}}
                     {{/each}}
                 </ul>

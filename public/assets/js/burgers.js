@@ -50,7 +50,7 @@ $(function() {
   
       // Send the DELETE request.
       $.ajax("/api/burgers/" + id, {
-        type: "DELETE"
+        type: "DELETE",
       }).then(
         function() {
           console.log("deleted burger", id);

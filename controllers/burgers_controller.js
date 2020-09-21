@@ -47,11 +47,8 @@ var router = express.Router();
 
     router.delete("/api/burgers/:id", function(req, res) {
         var condition = "id = " + req.params.id;
-
-        console.log("condition", condition);
     
-        burger.deleteOne({devoured: req.body.devoured
-        }, condition, function(result) {
+        burger.deleteOne( condition, function(result) {
             if(result.changedRows === 0) {
                 return res.status(404).end();
             } else {
@@ -59,11 +56,5 @@ var router = express.Router();
             }
         });
     });
-
-/*} catch(err) {
-    if (err) throw err;
-    console.log(err);
-}*/
-
-//export routers to server.js
+    
 module.exports = router;
