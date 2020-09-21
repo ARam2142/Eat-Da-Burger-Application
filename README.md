@@ -39,11 +39,8 @@ This repository is licensed under the MIT license
 # Credits
 The folowing resources were used to build this app:
 
-https://www.npmjs.com/package/inquirer
-
-https://www.codespot.org/javascript-email-validation/
-
-https://www.youtube.com/watch?v=NYnxW8j0OEc&t=27s
+David Hammond(tutor)
+Bremah(classmate)
 
 # Contact
 If there are any questions abou this application you can reach me at
