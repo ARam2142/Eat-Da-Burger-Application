@@ -32,7 +32,7 @@ var router = express.Router();
         
         burger.updateOne(
             {
-                devoured: req.body.devoured
+                devoured: true
             }, 
             condition, function(result) {
             if(result.changedRows === 0) {
