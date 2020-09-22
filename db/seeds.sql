@@ -1,5 +1,5 @@
 INSERT INTO 
-burgers (burger_name, devoured)
+burgerstable (burger_name, devoured)
 VALUES
 ("whopper", 0),
 ("hamburger", 0),
