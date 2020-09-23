@@ -4,9 +4,9 @@
         <img src="/assets/img/burger.png" height="290" width="250" />
     </div>
 
-    <div class="row d-flex justify-content-center">
-        <div class="row">
-            <div class=".col-6">
+    <div class="row">
+        <section class="col s12 m6">
+            <div class="col">
                 <!--burgers added to the waitlist-->
                 <h2>Burgers on the Main Menu</h2>
                 <ul class="burger-list">
@@ -17,7 +17,10 @@
                     {{/each}}
                 </ul>
             </div>
-            <div class=".col-6">
+        </section>
+
+        <section class="col s12 m6">
+            <div class="col d-flex justify-content-center">
                 <h2>Burgers devoured!</h2>
                 <ul class="devoured-list">
                     {{#each burgers}}
@@ -28,7 +31,7 @@
                     {{/each}}
                 </ul>
             </div>
-        </div>
+        </section>
     </div>
 
     <form class="form-create d-flex justify-content-center">
