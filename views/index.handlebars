@@ -4,11 +4,11 @@
         <img src="/assets/img/burger.png" height="290" width="250" />
     </div>
 
-    <div class="row row-cols-1 d-flex justify-content-center">
-        <div class="row ">
-            <div class="col">
+    <div class="row d-flex justify-content-center">
+        <div class="row">
+            <div class=".col-6">
                 <!--burgers added to the waitlist-->
-                <h2>Burgers waiting to be devoured</h2>
+                <h2>Burgers on the Main Menu</h2>
                 <ul class="burger-list">
                     {{#each burgers}}
                     {{#unless devoured}}
@@ -17,13 +17,13 @@
                     {{/each}}
                 </ul>
             </div>
-            <div class="col">
+            <div class=".col-6">
                 <h2>Burgers devoured!</h2>
                 <ul class="devoured-list">
                     {{#each burgers}}
                     {{#if devoured}}
                     {{> burgers/burger-block devoured=true}}
-                    <button class="trash-can" data-id="{{this.id}}">trash</button>
+                    <button class="trash-can" data-id="{{this.id}}">Delete!</button>
                     {{/if}}
                     {{/each}}
                 </ul>
