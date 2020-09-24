@@ -27,8 +27,8 @@ https://cryptic-shelf-77263.herokuapp.com/
 
 # Screenshots
 
-![Screen Shot 2020-09-20 at 10 51 18 PM](https://user-images.githubusercontent.com/65634748/93729784-f1941700-fb93-11ea-835d-43f0c105091a.png)
-![Screen Shot 2020-09-20 at 10 53 50 PM](https://user-images.githubusercontent.com/65634748/93729855-328c2b80-fb94-11ea-8b8b-444494bce3f3.png)
+![burgerapp](https://user-images.githubusercontent.com/65634748/94171545-63ec4c00-fe5f-11ea-9cb7-18483e0381b0.png)
+
 
 
 # usage
