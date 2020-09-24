@@ -5,31 +5,38 @@
     </div>
 
     <div class="row">
-        <section class="col s12 m6">
+        <section class="col s12 m4">
             <div class="col">
-                <!--burgers added to the waitlist-->
-                <h2>Burgers on the Main Menu</h2>
-                <ul class="burger-list">
-                    {{#each burgers}}
-                    {{#unless devoured}}
-                    {{> burgers/burger-block devoured=false}}
-                    {{/unless}}
-                    {{/each}}
-                </ul>
+                <div class="card" style="width: 25rem;">
+                    <div class="card-body">
+                        <h2 class="text-center">Burger Menu</h2>
+                        <ul class="burger-list">
+                            {{#each burgers}}
+                            {{#unless devoured}}
+                            {{> burgers/burger-block devoured=false}}
+                            {{/unless}}
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="col s12 m6">
-            <div class="col d-flex justify-content-center">
-                <h2>Burgers devoured!</h2>
-                <ul class="devoured-list">
-                    {{#each burgers}}
-                    {{#if devoured}}
-                    {{> burgers/burger-block devoured=true}}
-                    <button class="trash-can" data-id="{{this.id}}">Delete!</button>
-                    {{/if}}
-                    {{/each}}
-                </ul>
+        <section class="col s12 m4">
+            <div class="card" style="width: 25rem;">
+                <div class="card-body">
+                    <div class="col">
+                        <h2 class="text-center">Burgers devoured!</h2>
+                        <ul class="devoured-list">
+                            {{#each burgers}}
+                            {{#if devoured}}
+                            {{burger_name}}
+                            <button class="trash-can btn btn-danger" data-id="{{this.id}}">Delete!</button>
+                            {{/if}}
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
     </div>

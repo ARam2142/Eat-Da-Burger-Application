@@ -7,3 +7,16 @@
 body {
     background-color: green;
 }
+
+div.row {
+    margin-top: 14px;
+    margin-left: 20px;
+}
+
+ul {
+    font-size: 24px;
+}
+
+.card-body {
+    background-color: silver;
+}
