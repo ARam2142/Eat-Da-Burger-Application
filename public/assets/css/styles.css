@@ -11,6 +11,7 @@ body {
 div.row {
     margin-top: 14px;
     margin-left: 20px;
+    margin-bottom: 25px;
 }
 
 ul {
@@ -20,4 +21,8 @@ ul {
 
 .card-body {
     background-color: silver;
+}
+
+button.submit {
+    margin-top: 10px;
 }
