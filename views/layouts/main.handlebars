@@ -1,16 +1,49 @@
 <!DOCTYPE html>
+
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Eat Da Burger</title>
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-		<link rel="stylesheet" href="/assets/css/styles.css" type="text/css" />
-		<script src="https://code.jquery.com/jquery.js"></script>
-	</head>
-	<body>
-		<main>
-			{{{ body }}}
-		</main>
-		<script src="/assets/js/burgers.js" type="text/javascript"></script>
-	</body>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
+	 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<title>Eat Da Burger</title>
+</head>
+
+<body>
+
+	<!--HEADER-->
+	<header class="container-fluid bg-warning text-white">
+		<div class="row justify-content-center">
+			<span class="brand mb-0 h1"><h1>Burger Menu</h1></span>
+		</div>
+	</header>
+
+	<!--main content that will contain the real info-->
+	<main class="content">
+		{{{ body }}}
+	</main>
+
+	<br>
+
+	<!--FOOTER-->
+	 <footer class="bg-warning text-white">
+        <div class="justify-content-center">Weather-DashBoard © 2020</div>
+        <div class="social justify-content-center">
+            <a href="https://www.linkedin.com/in/andres-ramirez-8b07487b/" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>&nbsp;&#124;&nbsp;
+            <a href="https://github.com/ARam2142" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="github">
+            <a>Andres Ramirez</a>
+        </div>
+    </footer>
+
+</body>
+	<script src="/assets/js/burgers.js" type="text/javascript"></script>
+
 </html>

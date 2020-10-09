@@ -1,11 +1,28 @@
+@import url('https://fonts.google.com/specimen/Inconsolata?query==incons&sidebar.open=true&selection.family=Inconsolata');
+
 * {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
 }
 
+html, body {
+    height: 100%;
+}
+
+header {
+    width: 100%;
+}
+
 body {
     background-color: green;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    padding: 20px;
+    flex: 1 0 auto;
 }
 
 div.row {
@@ -25,4 +42,12 @@ ul {
 
 button.submit {
     margin-top: 10px;
+}
+
+/*FOOTER*/
+footer {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
 }
