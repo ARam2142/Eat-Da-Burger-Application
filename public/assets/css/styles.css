@@ -22,11 +22,10 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed; 
-    background: linear-gradient(0.25turn, #358db3, #b6eaee, #73b81a); 
+    background: linear-gradient(0.25turn, #3f87a6, #b6eaee, #73b81a); 
 }
 
-.content {
-    padding: 20px;
+.container {
     flex: 1 0 auto;
 }
 
@@ -55,5 +54,5 @@ footer {
     font-size: 20px;
     margin: 0 auto;
     text-align: center;
-    width: 100%;
+    flex-shrink: 0;
 }
