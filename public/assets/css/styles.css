@@ -15,6 +15,7 @@ header h1 {
     margin-bottom: 7px;
 }
 
+/*BODY CONTENT*/
 body {
     background-color:rgba(155, 76, 207, 0.507);
     display: flex;
@@ -29,19 +30,23 @@ body {
     flex: 1 0 auto;
 }
 
-div.row {
-    margin-top: 14px;
-    margin-left: 20px;
-    margin-bottom: 25px;
-}
-
 ul {
     font-size: 24px;
     list-style-type: none;
 }
 
-.card-body {
+div.menu.card {
     background-color: silver;
+    border-color: tomato;
+    border-width: thick;
+    border-style: groove;
+}
+
+div.devour.card {
+    background-color: silver;
+    border-color: tomato;
+    border-width: thick;
+    border-style: groove;
 }
 
 button.submit {
