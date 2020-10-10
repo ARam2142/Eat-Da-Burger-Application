@@ -7,60 +7,56 @@
     </div>
 </header>
 <br>
-<div class="container">
+<div class="container-fluid">
     <div class="d-flex justify-content-center">
         <img src="/assets/img/burger.png" height="290" width="250" />
     </div>
 
+    <br>
+    <div class="card-columns mx-auto d-flex justify-content-center col-12">
 
-    <!--burgers put on menu-->
-    <div class="row">
-        <section class="col s12 m4">
-            <div class="col">
-                <div class="card" style="width: 25rem;">
-                    <div class="card-body">
-                        <h2 class="text-center">Eat Da Burger</h2>
-                        <ul class="burger-list">
-                            {{#each burgers}}
-                            {{#unless devoured}}
-                            {{> burgers/burger-block devoured=false}}
-                            {{/unless}}
-                            {{/each}}
-                        </ul>
-                    </div>
-                </div>
+        <!--burgers in line-->
+        <div class="card text-center col-4">
+            <div class="card-body">
+                <h2 class="text-center">Eat Da Burger</h2>
+                <ul class="burger-list">
+                    {{#each burgers}}
+                    {{#unless devoured}}
+                    {{> burgers/burger-block devoured=false}}
+                    {{/unless}}
+                    {{/each}}
+                </ul>
             </div>
-        </section>
+        </div>
 
-        <!--burger eaten-->
-        <section class="col s12 m4">
-            <div class="card" style="width: 25rem;">
-                <div class="card-body">
-                    <div class="col">
-                        <h2 class="text-center">Burgers devoured!</h2>
-                        <ul class="devoured-list">
-                            {{#each burgers}}
-                            {{#if devoured}}
-                            {{burger_name}}
-                            <button class="trash-can btn btn-danger" data-id="{{this.id}}">Delete!</button>
-                            {{/if}}
-                            {{/each}}
-                        </ul>
-                    </div>
-                </div>
+        <!--burgers to be eaten-->
+        <div class="card text-center col-4">
+            <div class="card-body">
+                <h2 class="text-center">Burgers devoured!</h2>
+                <ul class="devoured-list">
+                    {{#each burgers}}
+                    {{#if devoured}}
+                    {{burger_name}}
+                    <button class="trash-can btn btn-danger" data-id="{{this.id}}">Delete!</button>
+                    {{/if}}
+                    {{/each}}
+                </ul>
             </div>
-        </section>
+        </div>
+
     </div>
 
-    <form class="form-create d-flex justify-content-center">
-        <div class="form-row justify-content-center">
-            <label>Add a burger to the menu</label>
-            <input type="text" class="form-control" id="request" placeholder="Enter a burger on the menu">
-            <button type="submit" class="submit btn btn-primary btn-lg">Submit</button>
-        </div>
-    </form>
+</div>
 
-    <br>
+<form class="form-create d-flex justify-content-center">
+    <div class="form-row justify-content-center">
+        <label>Add a burger to the menu</label>
+        <input type="text" class="form-control" id="request" placeholder="Enter a burger on the menu">
+        <button type="submit" class="submit btn btn-primary btn-lg">Submit</button>
+    </div>
+</form>
+
+<br>
 
 </div>
 
