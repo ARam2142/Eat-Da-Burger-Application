@@ -37,8 +37,7 @@
                 <ul class="devoured-list">
                     {{#each burgers}}
                     {{#if devoured}}
-                    {{burger_name}}
-                    <button class="trash-can btn btn-danger" data-id="{{this.id}}">Delete!</button>
+                    {{> burgers/burgerdevoured-block devoured=true}}
                     {{/if}}
                     {{/each}}
                 </ul>

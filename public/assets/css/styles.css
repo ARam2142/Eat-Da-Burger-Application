@@ -31,22 +31,27 @@ body {
 }
 
 ul {
-    font-size: 24px;
+    font-size: 26px;
     list-style-type: none;
 }
 
-div.menu.card {
-    background-color: silver;
-    border-color: tomato;
-    border-width: thick;
-    border-style: groove;
+li {
+    margin-bottom: 10px;  
 }
 
-div.devour.card {
+button.change-status {
+    font-size: 26px;
+}
+
+button.trash-can {
+    font-size: 26px
+}
+
+div.card {
     background-color: silver;
     border-color: tomato;
     border-width: thick;
-    border-style: groove;
+    border-style: groove; 
 }
 
 button.submit {
