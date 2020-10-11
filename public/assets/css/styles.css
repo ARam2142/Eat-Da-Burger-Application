@@ -23,7 +23,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed; 
-    background: linear-gradient(0.25turn, #42b2df, #f0fffc, #97ec2f); 
+    background: linear-gradient(0.25turn, #42b2df, #f0fffc, #97ec2f);
 }
 
 .container {
@@ -36,7 +36,7 @@ ul {
 }
 
 li {
-    margin-bottom: 10px;  
+    margin-bottom: 10px;
 }
 
 button.change-status {
