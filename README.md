@@ -17,12 +17,12 @@ Welcome to my burger application. Use this application to add a burger to the ma
 # live demo 
 https://cryptic-shelf-77263.herokuapp.com/
 
-
-
 # Screenshots
 
-![Screen Shot 2020-10-10 at 9 31 28 PM](https://user-images.githubusercontent.com/65634748/95668403-8f4e8680-0b41-11eb-913d-142a66b8e2ff.png)
-![Screen Shot 2020-10-10 at 9 31 37 PM](https://user-images.githubusercontent.com/65634748/95668404-92e20d80-0b41-11eb-836a-219b54dc6581.png)
+![Screen Shot 2020-12-12 at 1 05 05 AM](https://user-images.githubusercontent.com/65634748/101977023-a03a7780-3c18-11eb-863f-1bfc73690ec2.png)
+
+![Screen Shot 2020-12-12 at 1 14 48 AM](https://user-images.githubusercontent.com/65634748/101976884-9e23e900-3c17-11eb-93c8-5c107dc30811.png)
+
 
 
 
