@@ -48,6 +48,6 @@ If there are any questions abou this application you can reach me at
 
 Email: andresaaramirez@aol.com
 
-LinkedIn: https://www.linkedin.com/in/andres-ramirez-8b07487b/
+LinkedIn: https://www.linkedin.com/in/andres-ramirez12/
 
 Take a look at my other apps at https://github.com/ARam2142
