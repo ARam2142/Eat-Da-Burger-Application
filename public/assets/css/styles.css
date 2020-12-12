@@ -17,13 +17,18 @@ header h1 {
 
 /*BODY CONTENT*/
 body {
-    background-color:rgba(155, 76, 207, 0.507);
+    background-color:rgba(243, 109, 20, 0.644);
     display: flex;
     flex-direction: column;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed; 
-    background: linear-gradient(0.25turn, #42b2df, #f0fffc, #97ec2f);
+    /* background:  */
+}
+
+.burgerpic {
+    border-color: red;
+    border: 1px solid;
 }
 
 .container {
